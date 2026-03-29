@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Avengers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="container header">
+    <div class="logo-box">
+      <img src="assets/logo.png" alt="logo">
+      <div>
+        <h1>AI Avengers</h1>
+        <p class="tagline">Build that matters.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero container">
+    <h2>Turn Ideas into Powerful AI Prompts</h2>
+    <p class="subtitle">
+      Convert raw ideas into structured, high-quality AI prompts instantly
+    </p>
+    <span class="badge">⚡ Optimized for ChatGPT, Gemini & Claude</span>
+  </section>
+
+  <!-- MAIN APP -->
+  <section class="container app-section">
+    <main>
+
+      <!-- INPUT -->
+      <div class="card">
+        <textarea id="idea" placeholder="Enter your idea..."></textarea>
+
+        <div class="controls">
+          <select id="category">
+            <option value="coding">Coding</option>
+            <option value="youtube">YouTube</option>
+            <option value="business">Business</option>
+          </select>
+
+          <select id="quality">
+            <option value="basic">Basic</option>
+            <option value="advanced">Advanced</option>
+            <option value="pro">Pro</option>
+          </select>
+        </div>
+
+        <button id="generate" disabled>Generate</button>
+      </div>
+
+      <!-- OUTPUT -->
+      <div class="card output">
+        <pre id="result">Your structured prompt will appear here...</pre>
+        <button id="copy">Copy</button>
+      </div>
+
+      <!-- HISTORY -->
+      <div class="card history">
+        <h3>📜 History</h3>
+        <button id="clearHistory" class="danger-btn">Clear History</button>
+        <ul id="historyList"></ul>
+      </div>
+
+    </main>
+  </section>
+
+  <div id="toast">Copied!</div>
+  <footer class="container footer">
+    <a href="terms.html">Terms of Use</a> |
+    <a href="feedback.html">Feedback</a> |
+    <a href="contact.html">Contact</a>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

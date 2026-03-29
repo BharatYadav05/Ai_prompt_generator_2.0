@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback - AI Avengers</title>
+
+  <!-- ✅ USE GLOBAL CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("9v-ZXfUvYW3w24fqs");
+    })();
+  </script>
+
+  <!-- 🔥 SMALL PAGE-SPECIFIC FIX -->
+  <style>
+    .form-container {
+      max-width: 600px;
+      margin: 40px auto;
+    }
+
+    /* Dropdown fix */
+    .custom-select {
+      position: relative;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .select-selected {
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,0.08);
+      background: #fff;
+    }
+
+    .select-options {
+      position: absolute;
+      top: 110%;
+      left: 0;
+      right: 0;
+
+      background: #fff;
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,0.08);
+
+      display: none;
+      flex-direction: column;
+      z-index: 1000;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    .select-options div {
+      padding: 12px;
+    }
+
+    .select-options div:hover {
+      background: #f1f5f9;
+    }
+
+    .custom-select.active .select-options {
+      display: flex;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="container header">
+    <div class="logo-box">
+      <img src="assets/logo.png" alt="logo">
+      <div>
+        <h1>AI Avengers</h1>
+        <p class="tagline">Build that matters.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <section class="container">
+    <div class="form-container">
+
+      <div class="card">
+        <h2>💬 Feedback</h2>
+
+        <input type="text" id="name" placeholder="Your Name (optional)">
+        <input type="email" id="email" placeholder="Your Email (optional)">
+
+        <!-- Custom dropdown -->
+        <div class="custom-select" id="ratingSelect">
+          <div class="select-selected">Rate Experience</div>
+
+          <div class="select-options">
+            <div data-value="5">⭐⭐⭐⭐⭐ Excellent</div>
+            <div data-value="4">⭐⭐⭐⭐ Good</div>
+            <div data-value="3">⭐⭐⭐ Average</div>
+            <div data-value="2">⭐⭐ Poor</div>
+            <div data-value="1">⭐ Bad</div>
+          </div>
+        </div>
+
+        <input type="hidden" id="rating">
+
+        <textarea id="message" placeholder="Write your feedback..." required></textarea>
+
+        <button id="submitFeedback">Submit Feedback</button>
+
+        <p id="feedbackStatus"></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="container footer">
+    <a href="index.html">Home</a> |
+    <a href="terms.html">Terms of Use</a> |
+    <a href="contact.html">Contact</a>
+  </footer>
+
+  <script src="feedback.js"></script>
+</body>
+
+</html>
