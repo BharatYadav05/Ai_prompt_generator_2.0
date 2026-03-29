@@ -364,6 +364,11 @@ button:disabled {
   animation: fadeUp 0.4s ease;
 }
 
+.logo-box {
+  text-decoration: none;
+  color: inherit;
+}
+
 @keyframes fadeUp {
   from {
     opacity: 0;
