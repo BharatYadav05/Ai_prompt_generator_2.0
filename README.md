@@ -38,6 +38,7 @@ It helps users generate better prompts quickly using a clean and intuitive inter
 '''
 ## 📂 Project Structure
 
+```text
 AI_Avengers/
 ├── assets/
 ├── contact.html
@@ -48,6 +49,8 @@ AI_Avengers/
 ├── script.js
 ├── style.css
 └── terms.html
+```
+
 
   
 '''
