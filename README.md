@@ -39,19 +39,16 @@ It helps users generate better prompts quickly using a clean and intuitive inter
 ## 📂 Project Structure
 
 AI_Avengers/
-│
-├── index.html
-├── feedback.html
+├── assets/
 ├── contact.html
-├── terms.html
-│
-├── style.css
-│
-├── script.js
-├── feedback.js
 ├── contact.js
-│
-└── assets/
+├── feedback.html
+├── feedback.js
+├── index.html
+├── script.js
+├── style.css
+└── terms.html
+
   
 '''
 ## ⚙️ How It Works
