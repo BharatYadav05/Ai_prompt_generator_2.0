@@ -35,7 +35,6 @@ It helps users generate better prompts quickly using a clean and intuitive inter
 - LocalStorage (for history)  
 
 ---
-'''
 ## 📂 Project Structure
 
 ```text
@@ -50,10 +49,6 @@ AI_Avengers/
 ├── style.css
 └── terms.html
 ```
-
-
-  
-'''
 ## ⚙️ How It Works
 
 1. Enter your idea  
